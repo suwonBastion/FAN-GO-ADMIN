@@ -1,0 +1,24 @@
+# 나중에 nginx 붙일 때 사용. /etc/nginx/conf.d/adminproject.conf
+# 두 프로젝트를 경로로 분기하는 예시.
+server {
+    listen 80;
+    server_name _;
+
+    # 이 프로젝트 (adminProject) -> 8001
+    location /admin/ {
+        proxy_pass http://127.0.0.1:8001/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # 프로젝트 B -> 8002 (예시)
+    location /b/ {
+        proxy_pass http://127.0.0.1:8002/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}

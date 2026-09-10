@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]          # main / stage / staging/<name> 모든 브랜치
+  pull_request:
+    branches: [main, stage]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Import / syntax check (파이썬의 "빌드" 대체)
+        run: |
+          python -m compileall -q app
+          python -c "from app.main import app; print('import OK, routes:', len(app.routes))"
+        env:
+          # 클라우드 러너는 RDS 에 못 붙는다. 앱 import 만 검증하므로 더미 값.
+          DB_HOST: localhost
+          DB_USER: ci
+          DB_PASSWORD: ci
+          DB_NAME: ci
+
+      # RDS 접속이 필요한 tests/ 는 여기서 돌리지 않는다.
+      # 배포 후 deploy.yml 이 서버에서 pytest 를 실행한다.
