@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918be8cd-732d-4e78-bae4-0c7569342ffd" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,61 +35,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000111617532266" />
-      <entry key="S2" value="1.1288354332962853" />
-      <entry key="S5" value="1.9295191953233308" />
-      <entry key="S10" value="2.883365991731801" />
-      <entry key="S30" value="4.0921969833157315" />
-      <entry key="S60" value="4.5533603755194365" />
-      <entry key="M2" value="5.376433442993796" />
-      <entry key="M5" value="8.201470222813006" />
-      <entry key="M10" value="10.696173408929159" />
-      <entry key="M15" value="11.878445637159814" />
-      <entry key="M30" value="13.304250996608316" />
-      <entry key="H1" value="14.908515373908646" />
-      <entry key="H2" value="25.36704955928338" />
-      <entry key="H4" value="58.00498163517097" />
-      <entry key="D1" value="157.7049580092544" />
-      <entry key="W1" value="190.77200921426802" />
+      <entry key="MS100" value="4.6441827992230595E-8" />
+      <entry key="MS500" value="0.03414930434690476" />
+      <entry key="S2" value="0.42988444656198804" />
+      <entry key="S5" value="0.7216697351490636" />
+      <entry key="S10" value="0.935527218385332" />
+      <entry key="S30" value="1.3948874970476277" />
+      <entry key="S60" value="1.6427849531256258" />
+      <entry key="M2" value="1.8048930648166426" />
+      <entry key="M5" value="1.9458273597912714" />
+      <entry key="M10" value="2.5859285724272008" />
+      <entry key="M15" value="3.7660543919092486" />
+      <entry key="M30" value="7.156520912865766" />
+      <entry key="H1" value="11.287124823201884" />
+      <entry key="H2" value="22.025452772050194" />
+      <entry key="H4" value="53.54007827343917" />
+      <entry key="D1" value="156.62996026058005" />
+      <entry key="W1" value="192.23613076044708" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.4454916921894383E-18" />
-      <entry key="MS500" value="3.4679839119218715E-4" />
-      <entry key="S2" value="0.2047059676704865" />
-      <entry key="S5" value="0.7941601761379464" />
-      <entry key="S10" value="1.2577379894149323" />
-      <entry key="S30" value="1.712723870451611" />
-      <entry key="S60" value="1.850691999145695" />
-      <entry key="M2" value="1.9238709614402527" />
-      <entry key="M5" value="1.969186734564385" />
-      <entry key="M10" value="1.9845324437701088" />
-      <entry key="M15" value="1.9896747403156432" />
-      <entry key="M30" value="1.9952233041654135" />
-      <entry key="H1" value="2.08300562147021" />
-      <entry key="H2" value="3.503111706865136" />
-      <entry key="H4" value="8.535559385091343" />
-      <entry key="D1" value="24.591858602193287" />
-      <entry key="W1" value="29.98282267241611" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0000000000008997" />
+      <entry key="M2" value="1.0000013413762283" />
+      <entry key="M5" value="1.0067863580263512" />
+      <entry key="M10" value="1.1165019344091742" />
+      <entry key="M15" value="1.3005375270847277" />
+      <entry key="M30" value="1.7754428926362027" />
+      <entry key="H1" value="2.2985826543011925" />
+      <entry key="H2" value="3.7659451528614447" />
+      <entry key="H4" value="8.584496881852177" />
+      <entry key="D1" value="25.112402499247093" />
+      <entry key="W1" value="30.898607612806202" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0024381456033234603" />
-      <entry key="MS500" value="0.30026406120369553" />
-      <entry key="S2" value="0.995388157230875" />
-      <entry key="S5" value="2.448492160425873" />
-      <entry key="S10" value="3.9236721327957556" />
-      <entry key="S30" value="5.695844566523772" />
-      <entry key="S60" value="6.342679258454028" />
-      <entry key="M2" value="7.267288192391731" />
-      <entry key="M5" value="10.156229334253755" />
-      <entry key="M10" value="12.673077194357711" />
-      <entry key="M15" value="13.862910943913953" />
-      <entry key="M30" value="15.296795663047368" />
-      <entry key="H1" value="16.990060589475565" />
-      <entry key="H2" value="28.868719103446153" />
-      <entry key="H4" value="66.53863153374135" />
-      <entry key="D1" value="182.29588162430986" />
-      <entry key="W1" value="220.75466896792386" />
+      <entry key="MS100" value="0.011841536113361853" />
+      <entry key="MS500" value="0.4252292037313335" />
+      <entry key="S2" value="1.1415170541354" />
+      <entry key="S5" value="1.568366922038421" />
+      <entry key="S10" value="1.821126135690844" />
+      <entry key="S30" value="2.30393739139799" />
+      <entry key="S60" value="2.5801943916820744" />
+      <entry key="M2" value="2.767719189331506" />
+      <entry key="M5" value="2.9360179772485293" />
+      <entry key="M10" value="3.6934052184685786" />
+      <entry key="M15" value="5.060017108957919" />
+      <entry key="M30" value="8.927993463293548" />
+      <entry key="H1" value="13.583323461937999" />
+      <entry key="H2" value="25.789520208999548" />
+      <entry key="H4" value="62.12250835291303" />
+      <entry key="D1" value="181.7413842438336" />
+      <entry key="W1" value="223.13456708762473" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -102,39 +101,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "FastAPI.adminProject.executor": "Run",
-    "HTTP 요청.test_main | #1.executor": "Run",
-    "HTTP 요청.test_main | #2.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python 테스트.tests.test_user_query.test_raw_sql의 Python 테스트.executor": "Run",
-    "Python 테스트.tests.test_user_query.test_select_limit의 Python 테스트.executor": "Run",
-    "Python 테스트.tests.test_user_query.test_select_user의 Python 테스트.executor": "Run",
-    "Python.check_connection.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.user_router.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/workspaces/FANGO_ADMIN",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;FastAPI.adminProject.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 요청.test_main | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 요청.test_main | #2.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python 테스트.tests.test_user_query.test_raw_sql의 Python 테스트.executor&quot;: &quot;Run&quot;,
+    &quot;Python 테스트.tests.test_user_query.test_select_limit의 Python 테스트.executor&quot;: &quot;Run&quot;,
+    &quot;Python 테스트.tests.test_user_query.test_select_user의 Python 테스트.executor&quot;: &quot;Run&quot;,
+    &quot;Python.check_connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.user_router.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspaces/FANGO_ADMIN&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspaces\adminProject\app\schemas\user" />
@@ -308,7 +307,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/adminProject$.coverage" NAME=" 커버리지 결과" MODIFIED="1788783071947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/adminProject$user_router.coverage" NAME="user_router 커버리지 결과" MODIFIED="1788784132698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/api" />
-    <SUITE FILE_PATH="coverage/FANGO_ADMIN$main.coverage" NAME="main 커버리지 결과" MODIFIED="1789027185191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FANGO_ADMIN$main.coverage" NAME="main 커버리지 결과" MODIFIED="1789027231113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/adminProject$check_connection.coverage" NAME="check_connection 커버리지 결과" MODIFIED="1788780388117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/adminProject$main__1_.coverage" NAME="main (1) 커버리지 결과" MODIFIED="1788784233704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/adminProject$main.coverage" NAME="main 커버리지 결과" MODIFIED="1788845281013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
