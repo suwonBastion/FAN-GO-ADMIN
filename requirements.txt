@@ -1,0 +1,13 @@
+fastapi==0.141.1
+starlette==1.6.0
+uvicorn[standard]==0.52.4
+gunicorn==23.0.0
+sqlalchemy==2.0.52
+pymysql==1.2.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+pydantic-core==2.46.5
+anyio==4.15.1
+greenlet==3.5.5
+# 테스트용 (서버에선 불필요)
+pytest>=8.0
