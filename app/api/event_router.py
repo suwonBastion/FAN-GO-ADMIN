@@ -12,7 +12,7 @@ router = APIRouter(prefix="/event", tags=["장소"])
 def get_test_service(conn: Connection = Depends(get_conn)) -> TestService:
     return TestService(conn)
 
-@router.get("/")
+@router.get("")
 def test(svc: TestService = Depends(get_test_service)):
     return {"message":"안녕"}
 
