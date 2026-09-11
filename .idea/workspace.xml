@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918be8cd-732d-4e78-bae4-0c7569342ffd" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/event_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/cw_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/cw_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/user_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/user_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="43" />
+    <option name="cachedIndexableFilesCount" value="57" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -35,61 +38,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000000122" />
-      <entry key="S2" value="1.0004509580761312" />
-      <entry key="S5" value="1.0675468013911456" />
-      <entry key="S10" value="1.3656717573232584" />
-      <entry key="S30" value="2.1338381607713925" />
-      <entry key="S60" value="2.505663674457887" />
-      <entry key="M2" value="2.735255143203722" />
-      <entry key="M5" value="2.8895551789159555" />
-      <entry key="M10" value="2.943990603874644" />
-      <entry key="M15" value="2.9624848914484394" />
-      <entry key="M30" value="2.989770370198203" />
-      <entry key="H1" value="3.8658813179619385" />
-      <entry key="H2" value="14.32372409728234" />
-      <entry key="H4" value="47.23217407432747" />
-      <entry key="D1" value="146.28795053116542" />
-      <entry key="W1" value="178.87315245732879" />
+      <entry key="MS100" value="4.892668532559894E-47" />
+      <entry key="MS500" value="5.795090911447958E-10" />
+      <entry key="S2" value="0.00722552465391945" />
+      <entry key="S5" value="0.20791868647348294" />
+      <entry key="S10" value="0.6434679038035446" />
+      <entry key="S30" value="1.4363871641385522" />
+      <entry key="S60" value="2.318551797852366" />
+      <entry key="M2" value="5.549858317858514" />
+      <entry key="M5" value="14.428824872239508" />
+      <entry key="M10" value="21.77109112994483" />
+      <entry key="M15" value="25.478503765449346" />
+      <entry key="M30" value="30.33274381560636" />
+      <entry key="H1" value="33.99206183535665" />
+      <entry key="H2" value="44.609504627523734" />
+      <entry key="H4" value="76.5460246185202" />
+      <entry key="D1" value="178.04128362811588" />
+      <entry key="W1" value="212.48217409911442" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="3.1715111150519466E-222" />
-      <entry key="S60" value="1.7808736943006225E-111" />
-      <entry key="M2" value="4.220039921968313E-56" />
-      <entry key="M5" value="7.08156240782937E-23" />
-      <entry key="M10" value="8.484381745328344E-12" />
-      <entry key="M15" value="4.5397589482261456E-8" />
-      <entry key="M30" value="4.715301735090914E-4" />
-      <entry key="H1" value="0.09378363900146344" />
-      <entry key="H2" value="1.5747502738411894" />
-      <entry key="H4" value="6.687274707775822" />
-      <entry key="D1" value="22.67816632757067" />
-      <entry key="W1" value="27.99806588343707" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000601471646" />
+      <entry key="S5" value="1.003252266234235" />
+      <entry key="S10" value="1.0589303544311646" />
+      <entry key="S30" value="1.5094427869492058" />
+      <entry key="S60" value="1.9733455021911734" />
+      <entry key="M2" value="2.3817561541896053" />
+      <entry key="M5" value="2.7209185617951976" />
+      <entry key="M10" value="2.854482432206215" />
+      <entry key="M15" value="2.90160425304146" />
+      <entry key="M30" value="2.9503290717096453" />
+      <entry key="H1" value="3.040866999847309" />
+      <entry key="H2" value="4.308428094875481" />
+      <entry key="H4" value="9.118613545695563" />
+      <entry key="D1" value="25.347525685871247" />
+      <entry key="W1" value="30.939421099072085" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.887733533646291E-4" />
-      <entry key="MS500" value="0.22593818168778343" />
-      <entry key="S2" value="0.6898894389376785" />
-      <entry key="S5" value="0.9291318836600826" />
-      <entry key="S10" value="1.2934336526043082" />
-      <entry key="S30" value="2.1087561360146565" />
-      <entry key="S60" value="2.4929467601411157" />
-      <entry key="M2" value="2.7288465829452306" />
-      <entry key="M5" value="2.8869788012507382" />
-      <entry key="M10" value="2.9427001718251034" />
-      <entry key="M15" value="2.96162414320152" />
-      <entry key="M30" value="2.989809419270433" />
-      <entry key="H1" value="3.9593384125085165" />
-      <entry key="H2" value="15.897573989284782" />
-      <entry key="H4" value="53.917793097975114" />
-      <entry key="D1" value="168.96522705214707" />
-      <entry key="W1" value="206.87106227535486" />
+      <entry key="MS100" value="2.5100435221095375E-4" />
+      <entry key="MS500" value="0.19051810436162997" />
+      <entry key="S2" value="0.6678625059679009" />
+      <entry key="S5" value="1.0570832189544856" />
+      <entry key="S10" value="1.6132008306970704" />
+      <entry key="S30" value="2.8916275575754846" />
+      <entry key="S60" value="4.250405533887296" />
+      <entry key="M2" value="7.8982716482852755" />
+      <entry key="M5" value="17.12682672060972" />
+      <entry key="M10" value="24.610400136435466" />
+      <entry key="M15" value="28.368600925286003" />
+      <entry key="M30" value="33.27629211420231" />
+      <entry key="H1" value="37.02910168935718" />
+      <entry key="H2" value="48.91528520542799" />
+      <entry key="H4" value="85.66214997404258" />
+      <entry key="D1" value="203.38776671038943" />
+      <entry key="W1" value="243.42141568798002" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -117,13 +120,14 @@
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "staging/수원지창욱",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/workspaces/adminProject/app/schemas/user",
+    "last_opened_file_path": "C:/workspaces/FANGO_ADMIN/app/services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -135,6 +139,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspaces\FANGO_ADMIN\app\services" />
+      <recent name="C:\workspaces\FANGO_ADMIN\app\api" />
       <recent name="C:\workspaces\adminProject\app\schemas\user" />
     </key>
   </component>
@@ -296,6 +302,7 @@
       <workItem from="1788832059569" duration="2136000" />
       <workItem from="1788834616013" duration="10559000" />
       <workItem from="1789003722963" duration="7970000" />
+      <workItem from="1789086414803" duration="1978000" />
     </task>
     <servers />
   </component>
@@ -305,6 +312,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/adminProject$.coverage" NAME=" 커버리지 결과" MODIFIED="1788783071947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/adminProject$user_router.coverage" NAME="user_router 커버리지 결과" MODIFIED="1788784132698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/api" />
+    <SUITE FILE_PATH="coverage/FANGO_ADMIN$main.coverage" NAME="main 커버리지 결과" MODIFIED="1789088401556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/adminProject$check_connection.coverage" NAME="check_connection 커버리지 결과" MODIFIED="1788780388117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/adminProject$main__1_.coverage" NAME="main (1) 커버리지 결과" MODIFIED="1788784233704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/adminProject$main.coverage" NAME="main 커버리지 결과" MODIFIED="1788845281013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

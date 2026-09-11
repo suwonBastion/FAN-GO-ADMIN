@@ -7,13 +7,16 @@
 """
 from fastapi import FastAPI
 
+
 from app.api.user_router import router as user_router
 from app.api.test_router import router as test_router
+from app.api.cw_router import router as cw_router
 
 app = FastAPI(title="Admin API")
 
 app.include_router(user_router)
 app.include_router(test_router)
+app.include_router(cw_router)
 
 
 @app.get("/health")

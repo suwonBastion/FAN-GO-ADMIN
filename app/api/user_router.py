@@ -34,7 +34,7 @@ def list_users(page: int = 1, size: int = 50, svc: UserService = Depends(get_use
     return svc.list_users(page, size)
 
 
-@router.post("", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
+@router.post("/", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
 def create_user(payload: UserCreate, svc: UserService = Depends(get_user_service)):
     try:
         return svc.register(payload)
