@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918be8cd-732d-4e78-bae4-0c7569342ffd" name="변경" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/app/api/cw_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/cw_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/user_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/user_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+>>>>>>> stage
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +22,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
+<<<<<<< HEAD
     <option name="cachedIndexableFilesCount" value="58" />
+=======
+    <option name="cachedIndexableFilesCount" value="57" />
+>>>>>>> stage
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -35,6 +47,7 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
+<<<<<<< HEAD
       <entry key="MS100" value="4.6441827992230595E-8" />
       <entry key="MS500" value="0.03414930434690476" />
       <entry key="S2" value="0.42988444656198804" />
@@ -52,10 +65,30 @@
       <entry key="H4" value="53.54007827343917" />
       <entry key="D1" value="156.62996026058005" />
       <entry key="W1" value="192.23613076044708" />
+=======
+      <entry key="MS100" value="4.892668532559894E-47" />
+      <entry key="MS500" value="5.795090911447958E-10" />
+      <entry key="S2" value="0.00722552465391945" />
+      <entry key="S5" value="0.20791868647348294" />
+      <entry key="S10" value="0.6434679038035446" />
+      <entry key="S30" value="1.4363871641385522" />
+      <entry key="S60" value="2.318551797852366" />
+      <entry key="M2" value="5.549858317858514" />
+      <entry key="M5" value="14.428824872239508" />
+      <entry key="M10" value="21.77109112994483" />
+      <entry key="M15" value="25.478503765449346" />
+      <entry key="M30" value="30.33274381560636" />
+      <entry key="H1" value="33.99206183535665" />
+      <entry key="H2" value="44.609504627523734" />
+      <entry key="H4" value="76.5460246185202" />
+      <entry key="D1" value="178.04128362811588" />
+      <entry key="W1" value="212.48217409911442" />
+>>>>>>> stage
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
+<<<<<<< HEAD
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
       <entry key="S10" value="1.0" />
@@ -90,6 +123,42 @@
       <entry key="H4" value="62.12250835291303" />
       <entry key="D1" value="181.7413842438336" />
       <entry key="W1" value="223.13456708762473" />
+=======
+      <entry key="S2" value="1.000000601471646" />
+      <entry key="S5" value="1.003252266234235" />
+      <entry key="S10" value="1.0589303544311646" />
+      <entry key="S30" value="1.5094427869492058" />
+      <entry key="S60" value="1.9733455021911734" />
+      <entry key="M2" value="2.3817561541896053" />
+      <entry key="M5" value="2.7209185617951976" />
+      <entry key="M10" value="2.854482432206215" />
+      <entry key="M15" value="2.90160425304146" />
+      <entry key="M30" value="2.9503290717096453" />
+      <entry key="H1" value="3.040866999847309" />
+      <entry key="H2" value="4.308428094875481" />
+      <entry key="H4" value="9.118613545695563" />
+      <entry key="D1" value="25.347525685871247" />
+      <entry key="W1" value="30.939421099072085" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="2.5100435221095375E-4" />
+      <entry key="MS500" value="0.19051810436162997" />
+      <entry key="S2" value="0.6678625059679009" />
+      <entry key="S5" value="1.0570832189544856" />
+      <entry key="S10" value="1.6132008306970704" />
+      <entry key="S30" value="2.8916275575754846" />
+      <entry key="S60" value="4.250405533887296" />
+      <entry key="M2" value="7.8982716482852755" />
+      <entry key="M5" value="17.12682672060972" />
+      <entry key="M10" value="24.610400136435466" />
+      <entry key="M15" value="28.368600925286003" />
+      <entry key="M30" value="33.27629211420231" />
+      <entry key="H1" value="37.02910168935718" />
+      <entry key="H2" value="48.91528520542799" />
+      <entry key="H4" value="85.66214997404258" />
+      <entry key="D1" value="203.38776671038943" />
+      <entry key="W1" value="243.42141568798002" />
+>>>>>>> stage
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -101,6 +170,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;FastAPI.adminProject.executor&quot;: &quot;Run&quot;,
@@ -132,10 +202,45 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "FastAPI.adminProject.executor": "Run",
+    "HTTP 요청.test_main | #1.executor": "Run",
+    "HTTP 요청.test_main | #2.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python 테스트.tests.test_user_query.test_raw_sql의 Python 테스트.executor": "Run",
+    "Python 테스트.tests.test_user_query.test_select_limit의 Python 테스트.executor": "Run",
+    "Python 테스트.tests.test_user_query.test_select_user의 Python 테스트.executor": "Run",
+    "Python.check_connection.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.user_router.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "staging/수원지창욱",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/workspaces/FANGO_ADMIN/app/services",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> stage
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspaces\FANGO_ADMIN\app\services" />
+      <recent name="C:\workspaces\FANGO_ADMIN\app\api" />
       <recent name="C:\workspaces\adminProject\app\schemas\user" />
     </key>
   </component>
@@ -297,7 +402,11 @@
       <workItem from="1788832059569" duration="2136000" />
       <workItem from="1788834616013" duration="10559000" />
       <workItem from="1789003722963" duration="7970000" />
+<<<<<<< HEAD
       <workItem from="1789026272942" duration="910000" />
+=======
+      <workItem from="1789086414803" duration="1978000" />
+>>>>>>> stage
     </task>
     <servers />
   </component>
@@ -307,7 +416,11 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/adminProject$.coverage" NAME=" 커버리지 결과" MODIFIED="1788783071947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/adminProject$user_router.coverage" NAME="user_router 커버리지 결과" MODIFIED="1788784132698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/api" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/FANGO_ADMIN$main.coverage" NAME="main 커버리지 결과" MODIFIED="1789027231113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+    <SUITE FILE_PATH="coverage/FANGO_ADMIN$main.coverage" NAME="main 커버리지 결과" MODIFIED="1789088401556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> stage
     <SUITE FILE_PATH="coverage/adminProject$check_connection.coverage" NAME="check_connection 커버리지 결과" MODIFIED="1788780388117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/adminProject$main__1_.coverage" NAME="main (1) 커버리지 결과" MODIFIED="1788784233704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/adminProject$main.coverage" NAME="main 커버리지 결과" MODIFIED="1788845281013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
