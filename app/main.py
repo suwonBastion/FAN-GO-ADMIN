@@ -10,21 +10,20 @@ from fastapi import FastAPI
 
 from app.api.user_router import router as user_router
 from app.api.test_router import router as test_router
-<<<<<<< HEAD
+
 from app.api.event_router import router as event_router
-=======
+
 from app.api.cw_router import router as cw_router
->>>>>>> stage
 
 app = FastAPI(title="Admin API")
 
 app.include_router(user_router)
 app.include_router(test_router)
-<<<<<<< HEAD
+
 app.include_router(event_router)
-=======
+
 app.include_router(cw_router)
->>>>>>> stage
+
 
 
 @app.get("/health")
