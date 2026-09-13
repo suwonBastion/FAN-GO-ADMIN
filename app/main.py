@@ -14,6 +14,8 @@ from app.api.test_router import router as test_router
 from app.api.event_router import router as event_router
 
 from app.api.cw_router import router as cw_router
+from app.api.yj_router import router as yj_router
+from app.api.event_router import router as event_router
 
 app = FastAPI(title="Admin API")
 
@@ -23,6 +25,8 @@ app.include_router(test_router)
 app.include_router(event_router)
 
 app.include_router(cw_router)
+app.include_router(yj_router)
+app.include_router(event_router)
 
 
 
@@ -35,4 +39,4 @@ if __name__ == "__main__":
     # 파이참에서 이 파일 열고 ▶ (녹색 화살표) 누르면 이 블록이 실행됨
     import uvicorn
 
-    uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("app.main:app", host="127.0.0.1", port=8001, reload=True)
