@@ -39,7 +39,7 @@ class EventListView:
         self.dao = TestDao(conn)
 
     def event_list_view(self):
-        q = "select e.event_no, e.event_nm, e.add, e.start_dt, e.end_dt, c.ctg_nm, ct.ctg_type_nm, er.total_score, os.op_status_nm from event e, ctg c, ctg_type ct, external_review er, op_status os where e.ctg_no = c.ctg_no and c.ctg_type_no = ct.ctg_type_no and e.event_no = er.event_no and e.op_status_no = os.op_status_no;"
+        q = "SELECT e.event_no, e.event_nm, e.add, e.start_dt, e.end_dt, c.ctg_nm, ct.ctg_type_nm, er.total_score, os.op_status_nm, a.artist_nm, ag.group_nm FROM event e JOIN ctg c ON e.ctg_no = c.ctg_no JOIN ctg_type ct ON c.ctg_type_no = ct.ctg_type_no JOIN external_review er ON e.event_no = er.event_no JOIN op_status os ON e.op_status_no = os.op_status_no LEFT JOIN artist a ON e.artist_no = a.artist_no LEFT JOIN artist_group ag ON e.artist_group_no = ag.artist_group_no;"
         return self.dao.exec_query(q)
 
 
