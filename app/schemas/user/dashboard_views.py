@@ -8,7 +8,7 @@ from datetime import date, datetime
 from pydantic import BaseModel, ConfigDict
 
 class DAILYVIEW(BaseModel):
-    route_one_day: int | None = None
+    days: int | None = 7
 
 
 
