@@ -6,6 +6,7 @@
     http://127.0.0.1:8000/docs
 """
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 
 from app.api.user_router import router as user_router
@@ -18,6 +19,14 @@ from app.api.yj_router import router as yj_router
 from app.api.event_router import router as event_router
 
 app = FastAPI(title="Admin API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://ec2-54-180-95-40.ap-northeast-2.compute.amazonaws.com:8081"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.include_router(user_router)
 app.include_router(test_router)
