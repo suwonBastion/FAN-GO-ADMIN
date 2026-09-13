@@ -18,7 +18,7 @@ from app.schemas.user.user_params import UserFilter
 from app.schemas.user.user_status import UserStatusInsert
 from app.services.cw_service import LoginService
 from app.services.test_service import TestService
-from app.services.yj_service import AdminLoginService, DashBoardView
+from app.services.yj_service import AdminLoginService, DashBoardView, EventListView
 
 router = APIRouter(prefix="/adminlogin", tags=["adminlogin"])
 
@@ -54,7 +54,14 @@ def dashboard(
 
 
 
+def get_eventlist_view(conn: Connection = Depends(get_conn)) -> EventListView:
+    return EventListView(conn)
 
+
+@router.get("/eventlist")
+def eventlist(
+        svc: EventListView = Depends(get_eventlist_view)):
+    return svc.event_list_view()
 
 
 
