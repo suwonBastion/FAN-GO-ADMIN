@@ -47,7 +47,7 @@ def get_dashboard_view(conn: Connection = Depends(get_conn)) -> DashBoardView:
 
 @router.get("/dashboard")
 def dashboard(
-        datas: DAILYVIEW,
+        datas: DAILYVIEW = Depends(),
         svc: DashBoardView = Depends(get_dashboard_view)):
     return svc.dash_board_view(datas)
 
