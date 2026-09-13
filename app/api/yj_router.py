@@ -37,10 +37,6 @@ def login(
 
 
 
-
-
-
-
 def get_dashboard_view(conn: Connection = Depends(get_conn)) -> DashBoardView:
     return DashBoardView(conn)
 
@@ -50,6 +46,7 @@ def dashboard(
         datas: DAILYVIEW = Depends(),
         svc: DashBoardView = Depends(get_dashboard_view)):
     return svc.dash_board_view(datas)
+
 
 
 
