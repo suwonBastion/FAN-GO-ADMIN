@@ -189,6 +189,14 @@ Body가 전부 `null` / 비어있으면 아래처럼 응답하고 UPDATE 쿼리�
 { "msg": "변경할 값이 없습니다" }
 ```
 
+> **2026-09-14 버그 수정:** `DashBoardView.update_event` 내부에서 PK 바인딩 키를
+> `fields[" event_no"]` (앞에 공백 포함)로 넣고 있어서, UPDATE 쿼리의 `%(event_no)s`
+> 플레이스홀더와 키가 일치하지 않아 **필드를 1개 이상 보내는 모든 PATCH 요청이
+> `KeyError('event_no')`로 500 에러**가 나던 버그가 있었다. `fields["event_no"]`로
+> 공백을 제거해 수정 완료(`ffd0702`). 이 문서에 예전부터 있던 "실제 테스트로 검증 완료"
+> 서술은 이 버그가 들어가기 전 코드 기준이었던 것으로 보이며, 지금은 위 수정 이후
+> 기준으로 갱신된 상태다.
+
 ---
 
 ## 사용자 목록 `/userList`
@@ -254,6 +262,7 @@ Body가 전부 `null` / 비어있으면 아래처럼 응답하고 UPDATE 쿼리�
 
 ## 변경 이력 메모
 
-- `app/api/yj_router.py` 는 `yj_login_router` / `yj_dashboard_router` / `yj_eventlist_router` / `yj_user_router` 로 기능별 분리되며 삭제됨.
+- `app/api/yj_router.py` 는 `yj_login_router` / `yj_dashboard_router` / `yj_eventlist_router` / `yj_user_router` 로 기능별 분리되며 삭제됨 (`57b5310`).
 - 대시보드 `daily_routes` 는 `days` 파라미터와 무관하게 항상 최근 14일로 고정 (2026-09-14, `381b3b7`).
 - 이벤트 목록에 `artist_nm`, `group_nm` 컬럼 추가 (`914418a`).
+- `PATCH /eventList/{event_no}` 의 `event_no` 바인딩 키 오타(앞 공백) 때문에 필드가 있는 요청이 전부 500 에러 나던 버그 수정 (2026-09-14, `ffd0702`).
