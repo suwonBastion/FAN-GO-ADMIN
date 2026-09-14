@@ -8,12 +8,15 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-
+from app.api import yj_dashboard_router
 from app.api.user_router import router as user_router
 from app.api.test_router import router as test_router
 from app.api.cw_router import router as cw_router
-from app.api.yj_router import router as yj_router
+from app.api.yj_login_router import router as yj_login_router
+from app.api.yj_dashboard_router import router as yj_dashboard_router
+from app.api.yj_eventlist_router import router as yj_eventlist_router
 from app.api.event_router import router as event_router
+from app.api.yj_user_router import router as yj_user_router
 
 app = FastAPI(title="Admin API")
 
@@ -28,8 +31,11 @@ app.add_middleware(
 app.include_router(user_router)
 app.include_router(test_router)
 app.include_router(cw_router)
-app.include_router(yj_router)
 app.include_router(event_router)
+app.include_router(yj_login_router)
+app.include_router(yj_eventlist_router)
+app.include_router(yj_dashboard_router)
+app.include_router(yj_user_router)
 
 
 @app.get("/health")

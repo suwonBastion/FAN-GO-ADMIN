@@ -14,26 +14,14 @@ from pymysql.connections import Connection
 from app.db.raw import get_conn
 from app.schemas.user.admin_login import LOGINPARAMS
 from app.schemas.user.dashboard_views import DAILYVIEW
+from app.schemas.user.event_insert import NEWEVENT
 from app.schemas.user.user_params import UserFilter
 from app.schemas.user.user_status import UserStatusInsert
 from app.services.cw_service import LoginService
 from app.services.test_service import TestService
-from app.services.yj_service import AdminLoginService, DashBoardView, EventListView
+from app.services.yj_service import DashBoardView
 
-router = APIRouter(prefix="/adminlogin", tags=["adminlogin"])
-
-
-def get_login_service(conn: Connection = Depends(get_conn)) -> AdminLoginService:
-    return AdminLoginService(conn)
-
-
-@router.post("/login")
-def login(
-        datas: LOGINPARAMS,
-        svc: AdminLoginService = Depends(get_login_service)):
-    return svc.login_admin_user(datas)
-
-
+router = APIRouter(prefix="/adminDash", tags=["adminDash"])
 
 
 
@@ -46,21 +34,4 @@ def dashboard(
         datas: DAILYVIEW = Depends(),
         svc: DashBoardView = Depends(get_dashboard_view)):
     return svc.dash_board_view(datas)
-
-
-
-
-
-def get_eventlist_view(conn: Connection = Depends(get_conn)) -> EventListView:
-    return EventListView(conn)
-
-
-@router.get("/eventlist")
-def eventlist(
-        svc: EventListView = Depends(get_eventlist_view)):
-    return svc.event_list_view()
-
-
-
-
 
