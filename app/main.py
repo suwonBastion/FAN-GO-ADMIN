@@ -20,6 +20,9 @@ from app.api.yj_dashboard_router import router as yj_dashboard_router
 from app.api.yj_eventlist_router import router as yj_eventlist_router
 from app.api.event_router import router as event_router
 from app.api.yj_user_router import router as yj_user_router
+from app.api.yj_ctg_router import router as yj_ctg_router
+from app.api.yj_artist_router import router as yj_artist_router
+from app.api.yj_eventstatus_router import router as yj_eventstatus_router
 
 app = FastAPI(title="Admin API")
 
@@ -42,7 +45,9 @@ app.include_router(yj_login_router)
 app.include_router(yj_eventlist_router)
 app.include_router(yj_dashboard_router)
 app.include_router(yj_user_router)
-
+app.include_router(yj_ctg_router)
+app.include_router(yj_artist_router)
+app.include_router(yj_eventstatus_router)
 
 
 @app.get("/health")

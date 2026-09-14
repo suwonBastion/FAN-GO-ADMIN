@@ -14,6 +14,7 @@
 - [대시보드 `/adminDash`](#대시보드-admindash)
 - [이벤트 `/eventList`](#이벤트-eventlist)
 - [사용자 목록 `/userList`](#사용자-목록-userlist)
+- [기준 데이터 조회 `/artist` · `/ctg` · `/event`](#기준-데이터-조회-artist--ctg--event)
 - [기타 참고용 라우터](#기타-참고용-라우터)
 
 ---
@@ -189,6 +190,14 @@ Body가 전부 `null` / 비어있으면 아래처럼 응답하고 UPDATE 쿼리�
 { "msg": "변경할 값이 없습니다" }
 ```
 
+> **2026-09-14 버그 수정:** `DashBoardView.update_event` 내부에서 PK 바인딩 키를
+> `fields[" event_no"]` (앞에 공백 포함)로 넣고 있어서, UPDATE 쿼리의 `%(event_no)s`
+> 플레이스홀더와 키가 일치하지 않아 **필드를 1개 이상 보내는 모든 PATCH 요청이
+> `KeyError('event_no')`로 500 에러**가 나던 버그가 있었다. `fields["event_no"]`로
+> 공백을 제거해 수정 완료(`ffd0702`). 이 문서에 예전부터 있던 "실제 테스트로 검증 완료"
+> 서술은 이 버그가 들어가기 전 코드 기준이었던 것으로 보이며, 지금은 위 수정 이후
+> 기준으로 갱신된 상태다.
+
 ---
 
 ## 사용자 목록 `/userList`
@@ -239,6 +248,54 @@ Body가 전부 `null` / 비어있으면 아래처럼 응답하고 UPDATE 쿼리�
 
 ---
 
+## 기준 데이터 조회 `/artist` · `/ctg` · `/event`
+
+이벤트 등록/수정 화면에서 드롭다운 채울 때 쓰는 기준 데이터 조회용 라우터 3개.
+2026-09-14에 `main.py`에 등록됨 (`d6b5898`) — 등록 직전엔 `from api import ...`
+(`app.api` 경로 누락) 오타와, 라우터 모듈을 그대로 `include_router`에 넘기는
+버그 때문에 **앱 자체가 기동되지 않는 상태**였고, 다른 라우터들과 같은
+`from app.api.xxx_router import router as xxx_router` 패턴으로 고쳐서 정상 등록했다.
+
+### `GET /artist/artist_list`
+
+파일: `app/api/yj_artist_router.py` → `app/services/yj_service.py::ArtistList`
+
+`artist`, `artist_group` 을 조인해 전체 컬럼을 그대로 반환한다.
+
+```sql
+select * from artist a, artist_group ag where a.artist_group_no = ag.artist_group_no;
+```
+
+콤마 조인(=INNER JOIN)이라 `artist_group_no` 가 없는(그룹 미소속) 아티스트는
+**결과에서 통째로 빠진다.** 솔로 아티스트까지 필요하면 `LEFT JOIN` 전환을 검토할 것.
+
+### `GET /ctg/ctg_list`
+
+파일: `app/api/yj_ctg_router.py` → `app/services/yj_service.py::CategorySelect`
+
+`ctg`, `ctg_type` 을 조인해 전체 컬럼을 그대로 반환한다.
+
+```sql
+select * from ctg c, ctg_type ct where c.ctg_type_no = ct.ctg_type_no;
+```
+
+마찬가지로 콤마 조인(=INNER JOIN)이라 `ctg_type_no` 가 비어있는 카테고리는 빠진다.
+
+### `GET /event/status`
+
+파일: `app/api/yj_eventstatus_router.py` → `app/services/yj_service.py::EventStatus`
+
+`op_status` 테이블 전체를 그대로 반환한다.
+
+```sql
+select * from op_status os;
+```
+
+> 같은 `/event` prefix를 쓰는 기존 `app/api/event_router.py` (`GET /event/` 인사 메시지)와
+> 경로가 겹치지 않아 공존 가능 — 다만 prefix가 같은 라우터가 두 개라 혼동하기 쉬우니 유의.
+
+---
+
 ## 기타 참고용 라우터
 
 아래는 초기 세팅/레퍼런스용으로 남아있는 라우터로, 신규 기능 개발과는 무관하다.
@@ -254,6 +311,8 @@ Body가 전부 `null` / 비어있으면 아래처럼 응답하고 UPDATE 쿼리�
 
 ## 변경 이력 메모
 
-- `app/api/yj_router.py` 는 `yj_login_router` / `yj_dashboard_router` / `yj_eventlist_router` / `yj_user_router` 로 기능별 분리되며 삭제됨.
+- `app/api/yj_router.py` 는 `yj_login_router` / `yj_dashboard_router` / `yj_eventlist_router` / `yj_user_router` 로 기능별 분리되며 삭제됨 (`57b5310`).
 - 대시보드 `daily_routes` 는 `days` 파라미터와 무관하게 항상 최근 14일로 고정 (2026-09-14, `381b3b7`).
 - 이벤트 목록에 `artist_nm`, `group_nm` 컬럼 추가 (`914418a`).
+- `PATCH /eventList/{event_no}` 의 `event_no` 바인딩 키 오타(앞 공백) 때문에 필드가 있는 요청이 전부 500 에러 나던 버그 수정 (2026-09-14, `ffd0702`).
+- `/artist`, `/ctg`, `/event/status` 라우터 3개 추가. 등록 과정의 import 오타 + `include_router`에 모듈을 그대로 넘기던 버그(앱 기동 자체가 불가능했음) 수정 (2026-09-14, `d6b5898`).

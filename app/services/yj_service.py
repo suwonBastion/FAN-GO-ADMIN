@@ -73,7 +73,7 @@ class EventUpdate:
             for col in fields
         )
         q = f"UPDATE event SET {set_clause} WHERE event_no=%(event_no)s;"
-        fields[" event_no"] = event_no
+        fields["event_no"] = event_no
         return {"updated_rows": self.dao.exec_update(q, fields)}
 
 
@@ -93,6 +93,33 @@ class USerViewTotal:
 
     def total_view(self):
         q = "select (select count(*) from user) total_users, (select round(count(case when nationality_no != 30 then 1 end) / count(*) * 100, 1) from user) nationality_pct, (select count(distinct case when t.trip_no is not null then u.user_no end) from user u left join trip t on u.user_no = t.user_no) trip_users, (select round(count(distinct case when t.trip_no is not null then u.user_no end) / count(distinct u.user_no) * 100, 1) from user u left join trip t on u.user_no = t.user_no) real_trip_pct, (select count(*) from user where auth_no in (2,3,4)) admin;"
+        return self.dao.exec_query(q)
+
+
+class CategorySelect:
+    def __init__(self, conn: Connection):
+        self.dao = TestDao(conn)
+
+    def category_select(self):
+        q = "select * from ctg c, ctg_type ct where c.ctg_type_no = ct.ctg_type_no;"
+        return self.dao.exec_query(q)
+
+
+class ArtistList:
+    def __init__(self, conn: Connection):
+        self.dao = TestDao(conn)
+
+    def artist_list(self):
+        q = "select * from artist a, artist_group ag where a.artist_group_no = ag.artist_group_no;"
+        return self.dao.exec_query(q)
+
+
+class EventStatus:
+    def __init__(self, conn: Connection):
+        self.dao = TestDao(conn)
+
+    def event_status(self):
+        q = " select * from op_status os;"
         return self.dao.exec_query(q)
 
 # class AdminLoginService:
