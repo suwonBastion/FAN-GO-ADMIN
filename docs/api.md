@@ -6,6 +6,9 @@
 - Base URL(로컬): `http://127.0.0.1:8000` (또는 `app/main.py` 직접 실행 시 `:8001`)
 - 응답 포맷: 대부분 raw SQL 결과를 그대로 반환하는 `dict` / `list[dict]` (pymysql `DictCursor`)
 - 인증: 별도 세션/토큰 처리 없음 (로그인 성공 여부만 `{"msg": "OK" | "FAILED"}` 로 응답)
+- **총 10종 API** — 라우터별 `adminlogin` 1종 · `adminDash` 1종 · `eventList` 3종 · `userList` 2종 ·
+  `artist` 1종 · `ctg` 1종 · `event` 1종 / 메서드별 GET 7종 · POST 2종 · PATCH 1종
+  (헬스체크 `/health`, 참고용 라우터 4개는 제외한 개수)
 
 ## 목차
 
